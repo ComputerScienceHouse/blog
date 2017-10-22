@@ -1,5 +1,5 @@
 # Site settings
-email: 
+email: pr@csh.rit.edu
 baseurl: ""
 paginate: 5
 paginate_path: "/blog/page-:num"
@@ -13,11 +13,11 @@ twitter_username:
 default_img: 
 
 # Profile settings
-name: 
+name: Computer Science House
 profile_img: 
 profile: 
 social:
-  github: ComputerScienceHouse
+  github: https://github.com/ComputerScienceHouse
 
 # Build settings
 exclude: ["_screenshots", "Gemfile", "Gemfile.lock", "LICENSE.txt", "README.md"]

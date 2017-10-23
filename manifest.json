@@ -1,0 +1,18 @@
+{
+  "background_color": "#E11C52",
+  "description": "Computer Science House at RIT's Blog",
+  "dir": "auto",
+  "display": "standalone",
+  "lang": "en-us",
+  "name": "Computer Science House Blog",
+  "orientation": "any",
+  "short_name": "CSH Blog",
+  "start_url": "/",
+  "theme_color": "#B0197E",
+  "icons": [
+    {
+      "sizes": "16x16",
+      "src": "assets/favicon.ico"
+    }
+  ]
+}

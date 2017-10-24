@@ -29,27 +29,29 @@ layout: default
     </div>
   </section>
 
-  <section class="profile">
-    <div class="profile__card">
-      <div class="profile__img">
-        <figure class="absolute-bg" style="background-image: url('{{ page.author-image }}');"></figure>
+  {% if page.author and page.author-image %}
+    <section class="profile">
+      <div class="profile__card">
+        <div class="profile__img">
+          <figure class="absolute-bg" style="background-image: url('{{ page.author-image }}');"></figure>
+        </div>
+        <div class="profile__container">
+          <h4>{{ page.author }}</h4>
+          <p>{{ page.author-bio }}</p>
+          {% if page.author-email or page.author-social %}
+            <ul class="profile__social">
+              {% if page.author-email %}
+                <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ page.author-email }}"></a></li>
+              {% endif %}
+              {% for social in page.author-social %}
+                <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noopener"></a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
       </div>
-      <div class="profile__container">
-        <h4>{{ page.author }}</h4>
-        <p>{{ page.author-bio }}</p>
-        {% if site.email or site.social %}
-          <ul class="profile__social">
-            {% if site.email %}
-              <li><a class="fa fa-lg fa-envelope-o" href="mailto:{{ site.email }}"></a></li>
-            {% endif %}
-            {% for social in site.social %}
-              <li><a class="fa fa-lg fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noopener"></a></li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-      </div>
-    </div>
-  </section>
+    </section>
+  {% endif %}
 
 </article>
 

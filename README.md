@@ -40,7 +40,7 @@
     categories: 
       - git
       - GitHub
-    description: GitHub is an incredible tool, not only for development, but to learning
+    description: GitHub is an incredible tool, not only for development, but for learning
     image: https://devinmatte.github.io/images/posts/intro-to-github/profile.png
     image-sm: https://devinmatte.github.io/images/posts/intro-to-github/profile.png
     author: Devin Matte

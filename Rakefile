@@ -9,7 +9,9 @@ $testOpts = {
   # Allow empty alt tags (e.g. alt="") as these represent presentational images
   :empty_alt_ignore => true,
   # Automatically add extension (e.g. .html) to file paths, to allow extensionless URLs
-  :assume_extension => true
+  :assume_extension => true,
+  # LinkedIn blocks connections from html-proofer, ignore 999 error
+  :http_status_ignore => [999]
 }
 
 task :default => ["serve:development"]
@@ -45,10 +47,7 @@ namespace :serve do
   end
 end
 
-namespace :test do
-
-  desc "test production build"
-  task :production => ["build:production"] do
-    HTMLProofer.check_directory($outputDir, $testOpts).run
-  end
+desc "test production build"
+task :test => ["build:production"] do
+  HTMLProofer.check_directory($outputDir, $testOpts).run
 end

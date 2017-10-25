@@ -3,19 +3,19 @@ email: pr@csh.rit.edu
 baseurl:
 paginate: 5
 paginate_path: "/blog/page-:num"
-google_analytics: 
+google_analytics:
 
 # SEO settings
 title: Computer Science House Blog
 description: Computer Science House at RIT's Blog
-url: blog.csh.rit.edu
-twitter_username: 
-default_img: 
+url: https://blog.csh.rit.edu
+twitter_username:
+default_img:
 
 # Profile settings
 name: Computer Science House
-profile_img: 
-profile: 
+profile_img:
+profile:
 social:
   github: https://github.com/ComputerScienceHouse
 
@@ -29,4 +29,15 @@ sass:
   style: compressed
 
 # Gems
-gems: [jekyll-paginate, jekyll-sitemap, octopress-autoprefixer]
+gems:
+- jekyll-paginate
+- jekyll-sitemap
+- octopress-autoprefixer
+
+# Build Exclusions
+exclude:
+- vendor
+- Gemfile
+- Gemfile.lock
+- README.md
+- LICENSE.txt

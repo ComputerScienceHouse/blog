@@ -15,39 +15,43 @@
 * Push the new file(s) to your fork, and make a Pull Request to this repo
 
 ### Post Format
-    ---
-    layout: post
-    title: ""
-    date: 
-    categories:
-      - 
-    description: 
-    image: 
-    image-sm:
-    author: 
-    author-image: 
-    author-bio: 
-    author-email: 
-    author-social:
-      github: 
-    ---
+```yaml
+---
+layout: post
+title: ""
+date: 
+categories:
+  - 
+description: 
+image: 
+image-sm:
+author: 
+author-image: 
+author-bio: 
+author-email: 
+author-social:
+  github: 
+---
+```
     
 #### Example
-    ---
-    layout: post
-    title:  Intro to GitHub
-    date:   2017-10-22 12:25:00
-    categories: 
-      - git
-      - GitHub
-    description: GitHub is an incredible tool, not only for development, but for learning
-    image: https://devinmatte.github.io/images/posts/intro-to-github/profile.png
-    image-sm: https://devinmatte.github.io/images/posts/intro-to-github/profile.png
-    author: Devin Matte
-    author-image: https://avatars3.githubusercontent.com/u/9310513
-    author-bio: Second Year Software Engineering Student at Rochester Institute of Technology
-    author-email: devin@devinmatte.com
-    author-social:
-      github: https://github.com/devinmatte
-      linkedin: https://www.linkedin.com/in/devin-m-5556a386/
-    ---
+```yaml
+---
+layout: post
+title:  Intro to GitHub
+date:   2017-10-22 12:25:00
+categories: 
+  - git
+  - GitHub
+description: GitHub is an incredible tool, not only for development, but for learning
+image: https://devinmatte.github.io/images/posts/intro-to-github/profile.png
+image-sm: https://devinmatte.github.io/images/posts/intro-to-github/profile.png
+author: Devin Matte
+author-image: https://avatars3.githubusercontent.com/u/9310513
+author-bio: Second Year Software Engineering Student at Rochester Institute of Technology
+author-email: devin@devinmatte.com
+author-social:
+  github: https://github.com/devinmatte
+  linkedin: https://www.linkedin.com/in/devin-m-5556a386/
+---
+```

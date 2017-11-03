@@ -4,7 +4,11 @@ layout: default
 <section class="previews">
   <div>
     {% for post in paginator.posts %}
-      <figure class="absolute-bg preview__img" style="background-image: url('{{ post.image }}');"></figure>
+      {% if post.image %}
+        <figure class="absolute-bg preview__img" style="background-image: url('{{ post.image }}');"></figure>
+      {% else %}
+        <figure class="absolute-bg preview__img" style="background-image: url('/assets/img/default.jpg');"></figure>
+      {% endif %}
     {% endfor %}
     <div class="previews__container">
       <svg class="logo" viewBox="0 0 1740 526" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">

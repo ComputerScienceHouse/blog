@@ -15,8 +15,10 @@
             <div class="card__img">
               {% if post.image-sm %}
                 <figure class="absolute-bg" style="background-image: url('{{ post.image-sm }}');"></figure>
-              {% else %}
+              {% else if post.image %}
                 <figure class="absolute-bg" style="background-image: url('{{ post.image }}');"></figure>
+              {% else %}
+                <figure class="absolute-bg" style="background-image: url('/assets/img/default.jpg');"></figure>
               {% endif %}
             </div>
           {% endfor %}

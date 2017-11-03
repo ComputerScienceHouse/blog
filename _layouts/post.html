@@ -8,7 +8,11 @@ layout: default
       <i class="fa fa-lg fa-arrow-left"></i>
       <span>Back to Posts</span>
     </a>
-    <figure class="absolute-bg mast__img" style="background-image: url('{{ page.image }}');"></figure>
+    {% if page.image %}
+      <figure class="absolute-bg mast__img" style="background-image: url('{{ page.image }}');"></figure>
+    {% else %}
+      <figure class="absolute-bg preview__img" style="background-image: url('/assets/img/default.jpg');"></figure>
+    {% endif %}
     <div class="mast__container">
       <span><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time></span>
       <h1 itemprop="name headline">{{ page.title }}</h1>

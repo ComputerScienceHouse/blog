@@ -15,14 +15,13 @@ author-social:
 Audiophiler uses CSH's Ceph storage cluster to hold audio files and serves them through an easy to use API.
 The Audiophiler API allows other house services to quickly retrieve a member's uploaded audio files.
 When members come off of the NRH elevators and walk onto floor, they can tap their iButton against one of the
-readers in the elevator lobby to load up songs on audiophiler and play them aloud.
+readers in the elevator lobby to load up songs on Audiophiler and play them aloud.
 
 Audiophiler is the first web app that I've written entirely by myself.  While working on the project, I learned _a lot_ about
 writing code for the web.  Within my web app, I leverage a Postgres database to store audio file information.  I also use
 CSH's Ceph environment to hand out links to audio files, allowing for very fast file retrieval.  
 
-Audiophiler went through many changes before I passed it as a major project, and is still being worked on now.  In my opinion, Audiophiler is a great example of what CSH computer resources 
-are capable of.  The CSH OpenShift cluster lets me "deploy" my web app to the internet without any hastle.
+Audiophiler went through many changes before I passed it as a major project, and is still being worked on now.  In my opinion, Audiophiler is a great example of what CSH computer resources are capable of.  The CSH OpenShift cluster lets me "deploy" my web app to the internet without any hassle.
 
 In the future, I plan on cleaning up and optimizing Audiophiler. Recently, I have gotten some other CSHers to help me tweak my web app and offer feedback.
-I look forward to working with more people on my project and creating something that house memebers will use for a while.
+I look forward to working with more people on my project and creating something that house members will use for a while.

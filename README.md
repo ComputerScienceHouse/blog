@@ -9,7 +9,7 @@
 ## Posting
 * Fork this repo
 * Locally, and after installation, either:
-  * Run `sh newPost.sh` and fill in metadata to automatically generate a new post file
+  * Run `./newPost.sh` and fill in metadata to automatically generate a new post file
     * Fill in the post content, and verify YAML Front Matter **OR:**
   * Make a new file in `_posts/`:
     * Title the file `YYYY-MM-DD-your-title-here.md` (i.e. `2017-10-23-hello-world.md`)

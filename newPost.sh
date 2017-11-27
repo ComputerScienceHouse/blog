@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 read -p "Title: " title
 read -p "Date [$(date +%Y-%m-%d)]: " date

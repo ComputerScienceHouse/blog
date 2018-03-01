@@ -44,6 +44,9 @@ Next,
 ```
 $ swift package generate-xcodeproj
 ```
+
+This creates the correct package files so you can add dependencies. 
+
 Then, add Swiftfall as a dependency for the executable.
 
 ```
@@ -66,11 +69,15 @@ let package = Package(
 )
 ```
 
+
 Then, run:
 
 ```
 $ swift package generate-xcodeproj
 ```
+
+I believe this is because you need to pull down the new dependencies from the source.
+
 
 Now you're ready to use Swiftfall!
 

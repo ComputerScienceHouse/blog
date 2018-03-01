@@ -27,7 +27,6 @@ I went into this knowing how to code, specifically in Python, but not having a g
 I started the project by figuring out how to use RPi.GPIO library by making a simple program with LEDs.
 Then I started using the stepper motor driver and the stepper motor.
 This ended up being a hardware problem, not a software one.
-~~Fun fact, not having documentation makes everything much more difficult.~~
 After countless hours I figured out that I can connect an LED to 2 of the 4 pins of the motor and if the LED lights up upon turning the motor then I have found a pair of wires.
 From there I had to figure out how stepper motors work in software, which comparatively was not that difficult.
 

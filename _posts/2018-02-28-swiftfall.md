@@ -23,7 +23,7 @@ I like Magic the Gathering, but getting tons of information about Magic cards is
 Thankfully, [Scrython](https://github.com/nandascott/Scrython) does this already, but in Python. 
 
 ### Why Swift Was Appealing
-1) Swift's use of optionals was really appealing. Sometimes you can't be asbolutely sure about whether or not a request has been successful. Optionals allow a developer to handle those situations extremely safely. 
+1) Swift's use of optionals was really appealing. Sometimes you can't be absolutely sure about whether or not a request has been successful. Optionals allow a developer to handle those situations extremely safely. 
 2) Swift has a JSON decoder built in and it is appealing to have no dependencies.
 3) iOS, Apple TV, Apple Watch, and MacOS development is far easier in Swift
 4) Swift is new, and it is fun to do things never done before 

@@ -23,13 +23,14 @@ I like Magic the Gathering, but getting tons of information about Magic cards is
 Thankfully, [Scrython](https://github.com/nandascott/Scrython) does this already, but in Python. 
 
 ### Why Swift Was Appealing
-1) Swift's use of optionals was really appealing. Sometimes you can't be absolutely sure about whether or not a request has been successful. Optionals allow a developer to handle those situations extremely safely. 
-2) Swift has a JSON decoder built in and it is appealing to have no dependencies.
-3) iOS, Apple TV, Apple Watch, and MacOS development is far easier in Swift
-4) Swift is new, and it is fun to do things never done before 
+1. Swift's use of optionals was really appealing. Sometimes you can't be absolutely sure about whether or not a request has been successful. Optionals allow a developer to handle those situations extremely safely.
+2. Swift has a JSON decoder built in and it is appealing to have no dependencies.
+3. iOS, Apple TV, Apple Watch, and MacOS development are all far easier in Swift
+4. Swift is new, and it is fun to do things never done before
 
 # How do you use Swiftfall? 
-First, create an executable package. The executable includes a Hello World function by default. 
+First, create an executable package. The executable includes a Hello World function by default.
+
 ```
 $ mkdir MyExecutable
 $ cd MyExecutable
@@ -69,7 +70,6 @@ let package = Package(
 )
 ```
 
-
 Then, run:
 
 ```
@@ -84,19 +84,22 @@ Now you're ready to use Swiftfall!
 # Actually Using Swiftfall
 
 ## Getting a Card
-Swiftfall.getCard(fuzzy:String) -> Card? _(Fuzzy search)_
+`Swiftfall.getCard(fuzzy:String) -> Card? _(Fuzzy search)_`
 
-Swiftfall.getCard(exact:String) -> Card? _(Exact search)_
+`Swiftfall.getCard(exact:String) -> Card? _(Exact search)_`
 
-Swiftfall.getRandomCard() -> Card? _(Random Card)_
+`Swiftfall.getRandomCard() -> Card? _(Random Card)_`
 
 Ex.
+
 ``` 
 import Swiftfall
 let card = Swiftfall.getCard(exact:"Black Lotus")
 card?.simplePrint()
 ```
+
 Out.
+
 ```
 Name: Black Lotus
 Cost: {0}
@@ -107,6 +110,7 @@ Oracle Text:
 
 ## Other Things
 Swiftfall supports more than just cards. Other items you can retrieve include:
+
 * Sets 
 * Rulings 
 * Ruling Lists

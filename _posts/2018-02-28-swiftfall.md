@@ -1,12 +1,12 @@
 ---
 layout: post
 title:  Swiftfall
-date:   2018-02-228 21:25:00
+date:   2018-02-28 21:25:00
 categories: projects
 description: A wrapper for an API called Scryfall.
 author: Braden Bowdish
 author-image: https://avatars2.githubusercontent.com/u/15185628?s=460&v=4
-author-bio: Lover of Swift and Magic. 3rd year member of  Computer Science House
+author-bio: Lover of Swift and Magic. 3rd year member of Computer Science House.
 author-email: bmbowdish@csh.rit.edu
 author-social:
   github: https://github.com/bmbowdish
@@ -14,20 +14,18 @@ author-social:
 
 # What is Swiftfall? 
 
-Swiftfall is a wrapper written in Swift for the API Scryfall.
+Swiftfall is an API wrapper written in Swift for the API Scryfall.
 
-[Documentation for Scryfall API.](https://scryfall.com/docs/api)
+[Scryfall](https://scryfall.com/docs/api) is an API which handles information about the card game Magic: The Gathering. 
 
-Scryfall is API which handles information about the card game Magic: The Gathering. 
+I like Magic the Gathering, but getting tons of information about Magic cards is really annoying, especially if you don't want to or don't know how to implement a JSON parser or make requests to a website. Many newer developers would like to combine their passions but it's not always easy. 
 
-I like Magic the Gathering, but getting tons of information about Magic cards is really annoying. Especially if you don't want to or don't know how to implement a JSON parser or making requests to a website. Many newer developers would like to combine their passions but it's not always easy. 
-
-Thankfully, someone already found a solution to this problem. [Scrython does this already, but in Python.](https://github.com/nandascott/Scrython) Despite this, I decided to work on a similar project in Swift. 
+Thankfully, [Scrython](https://github.com/nandascott/Scrython) does this already, but in Python. 
 
 ### Why Swift Was Appealing
-1) Swift's use of optionals was really appealing.
+1) Swift's use of optionals was really appealing. Sometimes you can't be asbolutely sure about whether or not a request has been successful. Optionals allow a developer to handle those situations extremely safely. 
 2) Swift has a JSON decoder built in and it is appealing to have no dependencies.
-3) iOS, Apple TV, Apple Watch, and MacOS development is easy in Swift
+3) iOS, Apple TV, Apple Watch, and MacOS development is far easier in Swift
 4) Swift is new, and it is fun to do things never done before 
 
 # How do you use Swiftfall? 
@@ -46,7 +44,7 @@ Next,
 ```
 $ swift package generate-xcodeproj
 ```
-Then, set Swiftfall as a dependency for the executable.
+Then, add Swiftfall as a dependency for the executable.
 
 ```
 import PackageDescription
@@ -101,9 +99,11 @@ Oracle Text:
 ```
 
 ## Other Things
-Not only can you get a card, but you can get: 
+Swiftfall supports more than just cards. Other items you can retrieve include:
 * Sets 
 * Rulings 
 * Ruling Lists
 * Card Lists
 * Set Lists
+
+You can find more information about [Swiftfall on GitHub.com](https://github.com/bmbowdish/Swiftfall) 

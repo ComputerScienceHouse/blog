@@ -21,7 +21,7 @@ The Flask app on the CSH website has the JavaScript and Ajax to make requests to
 
 # The Story
 I picked up this IOT project from R&D.
-Spencer had the hardware (stepper motor, housing for stepper motor, and the stepper motor driver) and asked if someone could do the software by ImagineRIT.
+Spencer, our current R&D director, had the hardware (stepper motor, housing for stepper motor, and the stepper motor driver) and asked if someone could do the software by ImagineRIT.
 I had some ideas for ImagineRIT, but this one seemed more fun than the rest of them.
 I went into this knowing how to code, specifically in Python, but not having a great understanding of how to incorporate the hardware with the software, including web application integration.
 I started the project by figuring out how to use RPi.GPIO library by making a simple program with LEDs.
@@ -36,25 +36,26 @@ Since Flask uses python, and so does my code for the shades, I was simply able t
 I learned about **HTML** and **bootstrap** while creating the index page for this application.
 
 I now needed a domain that people could type in, because remembering an IP address is only possible when you type it in countless times as the developer.
-Thankfully the RTPs helped me out during the OpCommathon by showing me OpenShift.
+Thankfully, our OpComm director, Steven, helped me out during the OpCommathon by showing me OpenShift.
 As soon as I ran it up, it crashed.
 Rpi.GPIO imports can only be run on a Raspberry Pi... I eventually decided to make a second Flask app that would simply run on the CSH domain and link to the IP of the Pi.
 This, however, was not ideal because every time you changed the height of the shade, the page would reload.
 That is neither pretty nor efficient.
 To make the matters worse, the link was to an IP address, and a real world application should not be pointing to an IP address.
-So upon suggestions I decided to implement **Ajax**.
+I asked around, and upon the suggestion of our financial director, Devin, I decided to implement **Ajax**.
 
 I had never used JavaScript, nor Ajax prior to this, so it was a bit of learning curve.
 Obstacle one was making the script work; aside from syntax, it took a while to realize that script needed to be called after the buttons were created.
 Then came other obstacles, such as not being able to POST to Pi because it ran on HTTP and the website ran on HTTPS.
 Somewhere in there I had to implement CORS or Cross-Origin Resource Sharing, lack of it crashes the program.
-I tried for the longest time to have HTTPS with the IP of the Pi, but it never worked perfectly, so I decided to go with allowing HTTP requests on the OpenShift/CSH domain.
+With the help of our chairman, Jordan, I was able to get the Flask application on the Pi running on HTTPS, thereby allowing communication between the CSH domain and the Pi.
 
 I proceeded to add some more functionality to this application after OpCommathon.
-This took a day's worth of work because I was still learning JavaScript.
+This took a couple day's worth of work because I was still learning JavaScript.
 Now you can click buttons to set the height as a percentage, change how many steps or pulses the motor requires to make the shade go from completely down to completely up, and move the motor n steps at a time for debugging purposes.
 Furthermore, it  shows the current shade percentage.
 The idea behind showing that information is that if it does not match up with what you have physically in front of you, then you will know that you need to change your values for the program.
+The best part is that the page does not reload upon calling a function, the two apps simply talk to each other.
 
 Altogether, this project was a lot of fun.
 I learned quite a bit, both in the software world and hardware world.

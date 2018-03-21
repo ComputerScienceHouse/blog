@@ -16,7 +16,7 @@ author-social:
 Smart shades is a web service that allows one to control their window shades using a website.
 The hardware requirement is a Raspberry Pi (connected to the Internet), a stepper motor, housing for the stepper motor (3D printed), a stepper motor driver (I used the Pololu A4988), a 10K ohm resistor, and a domain.
 The application uses Python, Flask, OpenShift in the back end, Bootstrap, JavaScript, and Ajax.
-In short, there are two Flask apps running, one on [a CSH domain](shades.csh.rit.edu) and one on the Pi.
+In short, there are two Flask apps running, one on [a CSH domain](https://shades.csh.rit.edu) and one on the Pi.
 The Flask app on the CSH website has the JavaScript and Ajax to make requests to the Flask app on the Pi, which can then take care of changing the window shades.
 
 # The Story

@@ -22,11 +22,11 @@ test of raw execution speed.
 
 Even before running the code I can expect [Python](https://en.wikipedia.org/wiki/Python_(programming_language)) to be 
 the slowest since it's the only interpreted language being tested. [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)), 
-on the other hand, is complied down to machine code so it should be significantly faster. [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) 
-should be somewhere in the middle since its compiled but runs in the Java Virtual Machine instead of directly on the 
+on the other hand, is compiled down to machine code so it should be significantly faster. [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) 
+should be somewhere in the middle since it's compiled but runs in the Java Virtual Machine instead of directly on the 
 hardware.
 
-The metric I'll be measuring here is the wall-clock execution time. Note that this approach has a inherit amount of 
+The metric I'll be measuring here is the wall-clock execution time. Note that this approach has an inherit amount of 
 inaccuracy due to how operating systems handle process scheduling. However, it's also the metric that's most immediately 
 understandable and comparable so it works well for this situation.
 
@@ -47,14 +47,14 @@ iterations before they collide. This algorithm takes the most time to run when t
 be quite helpful if there was a way to skip over at least some of the iterations where they aren't touching.
 
 It turns out that it's trivial to calculate a rough estimate of the distance between the two objects by taking one point 
-from each and applying the Pythagorean theorem. Now, this would be a very a rough estimate since it doesn't take into 
+from each and applying the Pythagorean theorem. Now, this would be a very rough estimate since it doesn't take into 
 account the rotation or shape of the objects in question. However, if that rough separation estimate is greater than the 
-combined width of the two objects at their widest points then it can be assumed that that objects aren't touching. In 
+combined width of the two objects at their widest points then it can be assumed that the objects aren't touching. In 
 all other cases the program would still have to run the collision detection algorithm as before to get an accurate 
 result.
 
-With this optimization in play the execution times drop significantly. Note that due the the inherit inaccuracy of the 
-timing method used, the results for Rust on the two computers should be interpreted as roughly equal.
+With this optimization in play the execution times drop significantly. Note that due to the the inherit inaccuracy of 
+the timing method used, the results for Rust on the two computers should be interpreted as roughly equal.
 
 | CPU used for the test | Time for Python | Time for Kotlin | Time for Rust |
 | --------------------- | --------------- | --------------- | ------------- |

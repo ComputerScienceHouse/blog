@@ -158,3 +158,27 @@ ol, ul {
   background-color: $color-alpha;
   text-shadow: none;
 }
+
+table {
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+tr,
+td,
+th {
+  padding: 2px 5px;
+}
+
+thead {
+  border-top: 1px solid $color-alpha;
+}
+
+td:not(:first-of-type),
+th:not(:first-of-type) {
+  border-left: 1px solid $color-alpha;
+}
+
+tr {
+  border-bottom: 1px solid $color-alpha;
+}

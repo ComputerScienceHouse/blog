@@ -11,7 +11,12 @@ $testOpts = {
   # Automatically add extension (e.g. .html) to file paths, to allow extensionless URLs
   :assume_extension => true,
   # LinkedIn blocks connections from html-proofer, ignore 999 error
-  :http_status_ignore => [999]
+  :http_status_ignore => [999],
+  # SSL seems to be broken on TravisCI, so we'll ignore SSL errors.
+  :typhoeus => {
+    :ssl_verifypeer => 0,
+    :ssl_verifyhost => 0,
+  }
 }
 
 task :default => ["serve:development"]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Benchmarking Programing Languages
-date: 2018-03-26
+date: 2018-03-28
 categories: projects
 description: Testing the speed of separating axis theorem based collision detection in Python, Rust, and Kotlin
 author: Joel Eager

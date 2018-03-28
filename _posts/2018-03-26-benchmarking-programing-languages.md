@@ -26,7 +26,7 @@ on the other hand, is compiled down to machine code so it should be significantl
 should be somewhere in the middle since it's compiled but runs in the Java Virtual Machine instead of directly on the 
 hardware.
 
-The metric I'll be measuring here is the wall-clock execution time. Note that this approach has an inherit amount of 
+The metric I'll be measuring here is the wall-clock execution time. Note that this approach has an inherent amount of 
 inaccuracy due to how operating systems handle process scheduling. However, it's also the metric that's most immediately 
 understandable and comparable so it works well for this situation.
 
@@ -53,7 +53,7 @@ combined width of the two objects at their widest points then it can be assumed 
 all other cases the program would still have to run the collision detection algorithm as before to get an accurate 
 result.
 
-With this optimization in play the execution times drop significantly. Note that due to the the inherit inaccuracy of 
+With this optimization in play the execution times drop significantly. Note that due to the the inherent inaccuracy of 
 the timing method used, the results for Rust on the two computers should be interpreted as roughly equal.
 
 | CPU used for the test | Time for Python | Time for Kotlin | Time for Rust |

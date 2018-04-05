@@ -28,6 +28,6 @@ What could be redone:
 
 I had to use a Python dictionary as a form of "pseudo-switch," which feels wrong to me. I can't find a better solution that doesn't involve a complex series of conditionals. I'd like to refactor the code to be a lot cleaner overall, and I plan on doing so over the summer.
 
-[Create a character](https://charactergen.win)
+[Create a character](http://charactergen.win)
 
 [View the code](https://github.com/mouseexe/OneShotCharacterGenerator)

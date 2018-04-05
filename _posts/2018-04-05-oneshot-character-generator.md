@@ -10,7 +10,7 @@ author-bio: Second year CS major
 author-email: kss3800@rit.edu
 author-social:
   github: https://github.com/mouseexe
-  website: kevinschwenk.com
+  website: http://kevinschwenk.com
 ---
 Why it exists:
 

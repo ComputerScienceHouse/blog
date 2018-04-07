@@ -32,7 +32,7 @@ add "date: $date"
 add "categories:"
 for category in $categories
 do
-    add "\t- $category"
+    add "    - $category"
 done
 add "description: $description"
 add "image: $img"
@@ -42,7 +42,7 @@ add "author-image: $author_img"
 add "author-bio: $author_bio"
 add "author-email: $author_email"
 add "author-social:"
-add "\tgithub: $author_github"
-add "\tlinkedin: $author_linkedin"
+add "    github: $author_github"
+add "    linkedin: $author_linkedin"
 add "---\n"
 add "Post content goes here!"

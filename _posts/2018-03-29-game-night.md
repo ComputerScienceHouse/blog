@@ -15,7 +15,7 @@ author-social:
 
 ## Background
 
-In the Fall of 2017, I created a Slack channel for Computer Science House called **#game-night** (formerly known as **#card-games**). The purpose of the channel was to help the organisation's members get together to play many of the fun board and card games owned by CSH. As of the Spring of 2018, the channel has really been taking off. Seeing that rise in popularity, I decided to do more with this neat corner of CSH and develop a web application that would benefit those who frequented the game nights and the organisation as a whole.
+In the Fall of 2017, I created a Slack channel for Computer Science House called **#game-night** (formerly known as **#card-games**). The purpose of the channel was to help the organization's members get together to play many of the fun board and card games owned by CSH. As of the Spring of 2018, the channel has really been taking off. Seeing that rise in popularity, I decided to do more with this neat corner of CSH and develop a web application that would benefit those who frequented the game nights and the organization as a whole.
 
 ## Introducing Game Night
 

@@ -14,7 +14,7 @@ author-email: jonahfritz@outlook.com
 author-social:
   github: https://github.com/fickleEfrit
 ---
-SmashNotify is an app made in Python that allows people entered in tournaments on Smash.gg to receive text-message updates when they have a match they need to play! It makes use of TKinter for a GUI, pysmash to access data from Smash.gg API, and Twilio to send text messages from Python.
+SmashNotify is an app made in Python that allows people entered in tournaments on Smash.gg to receive text-message updates when they have a match they need to play! It makes use of TKinter for a GUI, pysmash to access data from the Smash.gg API, and Twilio to send text messages from Python.
 
 Before SmashNotify, I had never tried to make an app with a GUI using Python, and I had also never used any kind of wrapper for a website's API. When I first found out about pysmash, the way the API was written made it impossible to retrieve data about matches that had not already been completed, so I needed to work through all layers of the filtering and make it possible to keep these sets, and just make more parameters for what data is desired in general. 
 

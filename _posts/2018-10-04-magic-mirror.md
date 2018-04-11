@@ -20,10 +20,12 @@ The mirror measures “_” x “_” and was created over the course of a month
 The mirror also utilizes a raspberry pi to run control the mirror and uses Raspbian OS. The raspberry pi is running an open-source, modular, smart mirror platform called MagicMirror2.  
 Because the project is open-source and modular, many other features besides the default installation features are available to add to the mirror. 
 
+
 The mirror currently displays compliments, important news, the weather, the time and a calendar. 
 These basic features give the mirror a elegant look that compliments the stained wood acting as a frame. 
 The information is also displayed nearer the edges of the screen allowing for full use of the mirror while still providing the information desired. 
 Additional information that is being added currently is a remote control activation that is accessible through a smartphone, a memo module that displays to-do’s and a cryptocurrency tracker that displays individual cryptocurrency values.
+
 
 The mirror was constructed by first removing the casing from a standard monitor and attaching the two-way mirror to the monitor directly. 
 The setup was then framed in wood that had been stained prior to assembly. 

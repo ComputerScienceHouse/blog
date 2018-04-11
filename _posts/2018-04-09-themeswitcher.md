@@ -13,7 +13,7 @@ author-social:
     github: https://github.com/mxmeinhold
 ---
 
-[Themeswitcher](themeswitcher.csh.rit.edu) is a service that allows a user to select a bootstrap theme to be applied across the various internal CSH services.
+[Themeswitcher](https://themeswitcher.csh.rit.edu) is a service that allows a user to select a bootstrap theme to be applied across the various internal CSH services.
 
 Most CSH services are written in Python with Flask.
 In fact, when I went through most of the CSH services I could think of, __ALL__ of them were written with Flask.

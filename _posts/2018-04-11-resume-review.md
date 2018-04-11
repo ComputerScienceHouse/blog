@@ -5,8 +5,8 @@ date: 2018-04-11
 categories:
     - projects
 description: A webapp to upload resumes and review those of your peers
-image: img url
-image-sm: img small
+image: https://csh.rit.edu/~ram/resumes/resume.png
+image-sm: https://csh.rit.edu/~ram/resumes/resume.png
 author: Ram Zallan
 author-image: https://avatars3.githubusercontent.com/u/5818258
 author-bio: Second year Computer Science major, full stack software engineer. ramzallan.me
@@ -27,7 +27,7 @@ Members can comment on posts, and comments can be threaded to allow for direct r
 Once posted, users can leave comments on their own resumes to act as a description, if they want to denote things like past versions, recent changes, etc.
 Members can also delete their own resumes or comments if they choose to.
 
-![The homepage of Resume Review](https://csh.rit.edu/~ram/resumes/Screen%20Shot%202018-04-10%20at%207.15.13%20PM.png)
+![The homepage of Resume Review](https://csh.rit.edu/~ram/resumes/homepage.png)
 
 The homepage shows a list of recently posted resumes, so users can browse through people looking for review on their resumes.
 

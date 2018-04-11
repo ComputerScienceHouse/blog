@@ -5,7 +5,7 @@ date:  April 4, 2018
 categories: projects
 description: A basic neural net that recognizes binary patterns
 author: Nick Vaccarello
-author-image: https://avatars0.githubusercontent.com/u/17414243?s=460&v=4
+author-image: https://avatars1.githubusercontent.com/u/32079670?s=400&u=9056d77d53eb2a07e828fcb70adf0893bbce8f21&v=4
 author-bio: First year Computer Science major, proud memeber of CSH.
 author-email: nickwvac@gmail.com
 author-social:

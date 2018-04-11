@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Kudos Mapping and SLAM Project
-date: 2018-04-01
+date: 2018-04-11
 categories: 
     - Robotics
     - SLAM

@@ -8,8 +8,8 @@ categories:
 -javascript
 -bootstrap
 -html
-description: Takes in an ingredient on what ingreidents they user wishes to use and returns a list of meals
-they can make and the ingredients that they must then buy in order to make it, along with the reipie its' self.
+description: Takes in an ingredient on what the user wishes to cook with and returns a list of meals
+they can make and the ingredients that they must then buy in order to make them, along with the recipe themselves.
 image: n/a
 image-sm: n/a
 author: Nina Wiggins

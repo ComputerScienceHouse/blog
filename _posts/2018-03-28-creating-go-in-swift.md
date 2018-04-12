@@ -3,7 +3,7 @@ layout: post
 title: Creating Go in Swift
 date: 2018-03-28
 categories:
-	- projects
+    - projects
 description: A functional version of Go in Swift, using SpriteKit
 image: csh.rit.edu/~zoozle/nikhedonia.PNG
 image-sm: 
@@ -12,8 +12,8 @@ author-image: https://avatars0.githubusercontent.com/u/5004737?s=460&v=4
 author-bio: Undergraduate student studying computer science at the Rochester Institute of Technology. I specialize in web & app development, as well as user experience design.
 author-email: zachwilliams.me@gmail.com
 author-social:
-	github: https://github.com/ZachTheSloth
-	linkedin: https://www.linkedin.com/in/z-n-w/
+    github: https://github.com/ZachTheSloth
+    linkedin: https://www.linkedin.com/in/z-n-w/
 ---
 
 This project is an implementation of the board game 'Go' for iOS using Swift and and the SpriteKit framework. Go is a board game focused on surrounding enemy tiles to capture territory and remove the tiles from play. To accomplish this, I had to develop an algorithm to efficiently detect if a tile (or group of tiles) was fully surrounded, as well as practice the MVC structure for cleaner code. Using SpriteKit allowed me to take advantage of the sprite system to make logical 'tile' objects, as well as buttons and informational labels that could be animated.

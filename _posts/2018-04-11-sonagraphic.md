@@ -31,4 +31,4 @@ If I were to do this again, I'd probably do it in Unity.  There's a well documen
 on their storefront that was used to develop AudioShield (which was my original inspiration for this project).  
 Especially now that I have a better understanding of what's going on behind the scenes to grab beats from a song, 
 I can focus more of my efforts on making the gameplay fun and adding features like song importing.
-Currently can be viewed and cloned at github: https://github.com/dantayy/Sonagraphic
+The project currently can be viewed and cloned [here](https://github.com/dantayy/Sonagraphic).

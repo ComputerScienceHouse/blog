@@ -9,8 +9,8 @@ categories:
     - REST
     - API
 description: A Unified API for accessing the various parts of CSH's Smart Room Display
-image: https://fthmb.tqn.com/FzECgdCy_W-gXosZw89_-8UDraw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/PHP-code-58d2d5803df78c51623a6ce2.jpg
-image-sm: https://fthmb.tqn.com/FzECgdCy_W-gXosZw89_-8UDraw=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/PHP-code-58d2d5803df78c51623a6ce2.jpg
+image: https://avocaventures.com/wp-content/uploads/2014/11/lines-of-code.jpg
+image-sm: https://avocaventures.com/wp-content/uploads/2014/11/lines-of-code.jpg
 author: Leul Berhane-Meskel
 author-image: 
 author-bio: A 3rd year Computer Science student and an active member of CSH. A Developing Developer.

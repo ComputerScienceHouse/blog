@@ -31,7 +31,7 @@ made for crafting, sending, and parsing HTTP request and response objects. The s
 Check out the repo for detailed listing of all endpoints as well as links to the related repositories. The service is hosted using CSH's OpenShift environment at 
 [smartroom-api.csh.rit.edu](https://smartroom-api.csh.rit.edu).
 
-# But What Can it Do?
+# But What Can It Do?
 Let's go down an example of how the API looks to a developer. Let's say you want to open the shades to the room. First, you need to know the URL you need to access. The naming scheme for the 
 API is detailed in the readMe of the API Repository. In the case of the shades, the URL is simple enough, just [smartroom-api.csh.rit.edu/shades](smartroom-api.csh.rit.edu/shades). Now we need 
 to know what to include in the body of the POST request we will send. In this case, its simply a single variable in JSON called "howOpen" that will range from 0 (completely closed) to 100 (completely
@@ -39,7 +39,7 @@ to know what to include in the body of the POST request we will send. In this ca
  simply check on the blinds? Well, you simply send a GET request to the same URL. This consolidation of endpoints makes it simpler to develop, given that all the information about the shades 
  can be accessed from the same URL by simply changing the request type.
 
-# Whats coming down the pipe
+# Whats Coming Down the Pipe
 This project in the future has a few routes it can move down. If there is a desire for a more robust system capable of supporting say a Lounge, the routes and controllers can be altered to allow for several
 of any given object. This would move in tandem with an increase in types of smart hardware the API supports as move endpoints are exposed for use. Secondly, the project can move to include a authention 
 system to restrict access to CSH members.

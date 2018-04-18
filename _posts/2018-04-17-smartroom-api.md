@@ -33,7 +33,7 @@ Check out the repo for a detailed listing of all endpoints as well as links to t
 
 # But What Can It Do?
 Let's follow an example of how the API looks to a developer. Say you want to open the shades to the room. First, you need to know the URL you need to access. The naming scheme for the 
-API is detailed in the readMe of the API Repository. In the case of the shades, the URL is simple enough, just [smartroom-api.csh.rit.edu/shades](https://smartroom-api.csh.rit.edu/shades). Now we need 
+API is detailed in the readMe of the API Repository. In the case of the shades, the URL is simple enough, just add "/shades" to the end of the url. Now we need 
 to know what to include in the body of the POST request we will send. In this case, it's a single variable in JSON called "howOpen" that will range from 0 (completely closed) to 100 (completely
  open). Once the request is sent you will either be met with a message of Success if you are able to POST correctly, or of the old values if you are unable to POST. Now what if you want to 
 just check on the blinds? Well, you send a GET request to the same URL. This consolidation of endpoints makes it easier to develop, given that all the information about the shades 

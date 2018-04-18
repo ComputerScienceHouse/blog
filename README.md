@@ -6,6 +6,18 @@
 * Run `bundle exec jekyll serve` to generate and run site
 * The blog is now running at `http://127.0.0.1:4000/`!
 
+### Dependencies
+
+#### Debian/Ubuntu
+```
+apt install ruby-dev
+```
+
+#### Fedora/RedHat
+```
+dnf install ruby-devel zlib-devel
+```
+
 ## Posting
 * Fork this repo
 * Locally, and after installation, either:

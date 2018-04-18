@@ -27,13 +27,13 @@ naming schemes and data input formatting standards, the unified API allows devel
 
 # The Tech
 This API is written in PHP, utilizing the Lumen framework, specialized for microservices. The making of requests to individual aspects of the room  is handled by a Guzzle 6.0, a PHP package 
-made for crafting, sending, and parsing HTTP request and response objects. The source code for the API can be found at [github.com/LeulBM/SmartRoomAPI](https://github.com/LeulBM/SmartRoomAPI). 
+made for crafting, sending, and parsing HTTP request and response objects. The source code for the API can be found in my [SmartRoomAPI Repo](https://github.com/LeulBM/SmartRoomAPI). 
 Check out the repo for detailed listing of all endpoints as well as links to the related repositories. The service is hosted using CSH's OpenShift environment at 
 [smartroom-api.csh.rit.edu](https://smartroom-api.csh.rit.edu).
 
 # But What Can It Do?
 Let's go down an example of how the API looks to a developer. Let's say you want to open the shades to the room. First, you need to know the URL you need to access. The naming scheme for the 
-API is detailed in the readMe of the API Repository. In the case of the shades, the URL is simple enough, just [smartroom-api.csh.rit.edu/shades](smartroom-api.csh.rit.edu/shades). Now we need 
+API is detailed in the readMe of the API Repository. In the case of the shades, the URL is simple enough, just [smartroom-api.csh.rit.edu/shades](https://smartroom-api.csh.rit.edu/shades). Now we need 
 to know what to include in the body of the POST request we will send. In this case, its simply a single variable in JSON called "howOpen" that will range from 0 (completely closed) to 100 (completely
  open). Once the request is sent you will either be met with a message of Success if you are able to POST correctly, or of the old values if you are unable to POST. Now what if you want to 
  simply check on the blinds? Well, you simply send a GET request to the same URL. This consolidation of endpoints makes it simpler to develop, given that all the information about the shades 

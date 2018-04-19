@@ -41,7 +41,7 @@ author-social:
 ```yaml
 ---
 layout: post
-title:  Intro to GitHub
+title:  Intro to GitHub  
 date:   2017-10-22 12:25:00
 categories: 
   - git

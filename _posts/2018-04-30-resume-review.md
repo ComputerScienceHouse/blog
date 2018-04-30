@@ -20,7 +20,7 @@ author-social:
 
 ### Overview
 [Resume Review](https://resumes.csh.rit.edu) is a web app written for CSHers to upload their resumes and receive feedback on them.
-Members can prepare for career fairs, company visits, and job applications by running their resumes by their peers, requesting specific changes or, just asking for general opinions. 
+Members can prepare for career fairs, company visits, and job applications by running their resumes by their peers, requesting specific changes or just asking for general opinions. 
 
 The site allows for the upload of PDF files, and [reinforces good file naming practices](https://github.com/RamZallan/resume-review/blob/d3ca7f68bf940e5aeaea42061b5278369b89a90d/routes/upload.js#L29).
 Members can comment on posts, and comments can be threaded to allow for direct responses to feedback.

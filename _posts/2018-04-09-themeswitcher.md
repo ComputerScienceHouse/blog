@@ -2,6 +2,7 @@
 layout: post
 title: ThemeSwitcher
 date: 2018-04-09
+image: https://csh.rit.edu/~mom/themeswitcher.png
 categories:
     - projects
 description: A webservice that allows a user to select a bootstrap theme and an api to serve that theme to other sites that desire to implement themeswitcher.
@@ -23,4 +24,4 @@ Themeswitcher uses Node.js to serve an API for a Mongo database.
 A user selects their theme on the Angular based front end, which displays examples of that theme and stores their selection.
 
 When another service wishes to load a user's theme, it must simply make a style reference to `themeswitcher.csh.rit.edu/api/get` and the logged in user's theme will be returned as a redirect to s3.
-Themeswitcher requires SSO on principle, so it can determine who's theme to return.
+Themeswitcher requires SSO on principle, so it can determine whose theme to return.

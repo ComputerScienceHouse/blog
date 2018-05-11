@@ -12,7 +12,7 @@ author-image: https://avatars0.githubusercontent.com/u/34044719?s=460&amp;v=4
 author-bio: First Year Computer Science Student at Rochester Institute of Technology
 author-email: zyenchik@gmail.com
 author-social:
-  github: https://github.com/zcy3071
+  github: https://github.com/zackyenchik
 ---
 # Summary
 [Capsule Killer](https://github.com/zcy3071/CapsuleKiller) is a first-person shooter that I developed to learn more about the skills and 

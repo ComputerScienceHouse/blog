@@ -9,7 +9,7 @@ author-image: https://avatars2.githubusercontent.com/u/10407155?s=460&v=4
 author-bio: First Year Computer Science Student at Rochester Institute of Technology
 author-email: axg4975@rit.edu
 author-social:
-  github: https://github.com/axg4975
+  github: https://github.com/ag-ayush
   linkedin: https://www.linkedin.com/in/ayush-goel-589ba215a/
 ---
 # Summary
@@ -61,4 +61,4 @@ Altogether, this project was a lot of fun.
 I learned quite a bit, both in the software world and hardware world.
 ImagineRIT is still weeks from now, and as a result I plan on adding Amazon Alexa Skill to this, or someway of using voice command to perform the same actions.
 
-P.S. For details on wiring components, please visit the GitHub source of this project [here](https://github.com/axg4975/smart-window-shades).
+P.S. For details on wiring components, please visit the GitHub source of this project [here](https://github.com/ag-ayush/smart-window-shades).

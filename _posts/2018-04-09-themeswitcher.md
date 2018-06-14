@@ -7,7 +7,7 @@ categories:
     - projects
 description: A webservice that allows a user to select a bootstrap theme and an api to serve that theme to other sites that desire to implement themeswitcher.
 author: Max Meinhold
-author-image: https://members.csh.rit.edu/~mom/momProfileSmall.jpeg
+author-image: https://csh.rit.edu/~mom/momProfileSmall.jpeg
 author-bio: Freshman Computer Science Major at RIT and Computer Science House
 author-email: mxmeinhold@csh.rit.edu
 author-social:

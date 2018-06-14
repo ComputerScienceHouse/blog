@@ -5,7 +5,7 @@ date: 2018-04-09
 image: https://csh.rit.edu/~mom/themeswitcher.png
 categories:
     - projects
-description: A webservice that allows a user to select a bootstrap theme and an api to serve that theme to other sites that desire to implement themeswitcher.
+description: A webservice that allows a user to select a Bootstrap theme and an api to serve that theme to other sites that desire to implement themeswitcher.
 author: Max Meinhold
 author-image: https://csh.rit.edu/~mom/momProfileSmall.jpeg
 author-bio: Freshman Computer Science Major at RIT and Computer Science House
@@ -14,14 +14,13 @@ author-social:
     github: https://github.com/mxmeinhold
 ---
 
-[Themeswitcher](https://themeswitcher.csh.rit.edu) is a service that allows a user to select a bootstrap theme to be applied across the various internal CSH services.
+[Themeswitcher](https://themeswitcher.csh.rit.edu) is a service that allows a user to select a Bootstrap theme to be applied across the various internal CSH services.
 
-Most CSH services are written in Python with Flask.
-In fact, when I went through most of the CSH services I could think of, __ALL__ of them were written with Flask.
-Which is why Themeswitcher is written with Node.js.
+Most CSH services are written in Python with Flask, which is why Themeswitcher is written with Node.js.
+When I went through most of the CSH services I could think of, __ALL__ of them were written with Flask, so I took the opportunity to both learn something new and provide an example of another way to make and API.
 
-Themeswitcher uses Node.js to serve an API for a Mongo database.
+Themeswitcher uses Node.js Express to serve API endpoints for a Mongo database.
 A user selects their theme on the Angular based front end, which displays examples of that theme and stores their selection.
 
-When another service wishes to load a user's theme, it must simply make a style reference to `themeswitcher.csh.rit.edu/api/get` and the logged in user's theme will be returned as a redirect to s3.
+When another service wishes to load a user's theme, it must simply make a style reference to `themeswitcher.csh.rit.edu/api/get` and the current user's theme will be returned as a redirect to CSH S3.
 Themeswitcher requires SSO on principle, so it can determine whose theme to return.

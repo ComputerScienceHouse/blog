@@ -19,7 +19,7 @@ author-social:
 Most CSH services are written in Python with Flask, which is why Themeswitcher is written with Node.js.
 When I went through most of the CSH services I could think of, __ALL__ of them were written with Flask, so I took the opportunity to both learn something new and provide an example of another way to make and API.
 
-Themeswitcher's API is written using Node.js Express to provide endpoints for a Mongo database.
+Themeswitcher's API is written using Node.js Express to provide endpoints for a Mongo database, which Themeswitcher interacts with using Mongoose.
 A user selects their theme on the Angular based front end, which displays examples of that theme and stores their selection.
 
 When another service wishes to load a user's theme, it must simply make a style reference to `themeswitcher.csh.rit.edu/api/get` and the current user's theme will be returned as a redirect to CSH S3.

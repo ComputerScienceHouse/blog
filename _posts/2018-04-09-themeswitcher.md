@@ -19,8 +19,16 @@ author-social:
 Most CSH services are written in Python with Flask, which is why Themeswitcher is written with Node.js.
 When I went through most of the CSH services I could think of, __ALL__ of them were written with Flask, so I took the opportunity to both learn something new and provide an example of another way to make and API.
 
-Themeswitcher uses Node.js Express to serve API endpoints for a Mongo database.
+Themeswitcher's API is written using Node.js Express to provide endpoints for a Mongo database.
 A user selects their theme on the Angular based front end, which displays examples of that theme and stores their selection.
 
 When another service wishes to load a user's theme, it must simply make a style reference to `themeswitcher.csh.rit.edu/api/get` and the current user's theme will be returned as a redirect to CSH S3.
-Themeswitcher requires SSO on principle, so it can determine whose theme to return.
+The user is determined using CSH SSO, so Themeswitcher uses Express' `next()` functionality to provide a default theme before enforcing login (pictured below).
+This route also handles the edge case of SSO failing to communicate with themeswitcher, allowing services to still have CSS in the event of an outage.
+```javascript
+// If no user is logged in, redirects to the default theme.
+app.get('/api/get', function(req, res, next) {
+  if(req.user) next(); // Passes to standard get
+  else res.redirect(getTheme(process.env.DEFAULT_CSS).cdn);
+});
+```

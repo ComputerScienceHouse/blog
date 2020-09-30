@@ -1,7 +1,7 @@
 # CSH Blog
 
 ## Installation
-* Clone this repo
+* Clone this repository
 * Run `bundle install` to install dependencies
 * Run `bundle exec jekyll serve` to generate and run site
 * The blog is now running at `http://127.0.0.1:4000/`!

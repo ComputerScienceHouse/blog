@@ -19,7 +19,7 @@ dnf install ruby-devel zlib-devel
 ```
 
 ## Posting
-* Fork this repo
+* Fork this repository
 * Locally, and after installation, either:
   * Run `./newPost.sh` and fill in metadata to automatically generate a new post file
     * Fill in the post content, and verify YAML Front Matter **OR:**
@@ -27,7 +27,7 @@ dnf install ruby-devel zlib-devel
     * Title the file `YYYY-MM-DD-your-title-here.md` (i.e. `2017-10-23-hello-world.md`)
     * Fill in the YAML Front Matter at the top of the file, as detailed [below](#post-format)
     * Below the Front Matter, write the body of the post, in Markdown
-* Push the new file(s) to your fork, and make a Pull Request to this repo
+* Push the new file(s) to your fork, and make a Pull Request to this repository
 
 ### Post Format
 ```yaml
